@@ -1,0 +1,163 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    letter-spacing: -1px;
+  }
+  
+  .container {
+    width:  900px;
+    margin: auto;
+  }
+  
+  .page-title {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+    background-color: #f05768;
+    text-align: center;
+    padding: 0.25em 0.5em 0.5em;
+    border-bottom: 0.075em solid #add8e6;
+    /* Pour les nombres à virgules, le 0 en unité n'est pas obligatoire :
+    0.25rem peut s'écrire .25rem */
+    border-radius: 0 0 .25em .25em;
+  }
+  
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+  }
+  
+  .menu,
+  .social {
+    display: flex;
+  }
+  
+  .menu {
+    gap: 1em;
+  }
+  
+  .menu__link {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .menu__link,
+  .link {
+    color: black;
+  }
+  
+  .social {
+    gap: .5em;
+  }
+  
+  .social__icon {
+    width: 1em;
+  }
+  
+  .too-much__title {
+    color: #2c98cc;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .too-much__text {
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 1.1em 0;
+  }
+  
+  .cam-of-the-week {
+    position: relative;
+    margin: 1em 0;
+  }
+  
+  .cam-of-the-week__image {
+    max-width: 100%;
+  }
+  
+  .cam-of-the-week__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f05768;
+    color: white;
+    font-weight: bold;
+    font-size: 1.35em;
+    text-transform: uppercase;
+    padding: 0.4em;
+  }
+  
+  .gallery-submit-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .gallery {
+    width: 70%;
+    /* Astuce pour ne pas afficher les espaces  qui gênent pour le calcul des tailles des images
+    de la galerie */
+    font-size: 0;
+  }
+  
+  .gallery__thumbnail {
+    width: 25%;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .gallery__thumbnail:first-child {
+    width: 50%;
+    float: left;
+  }
+  
+  .image-submit {
+    width: 23%;
+    background-color: #048;
+    padding: 1.4em;
+  }
+  
+  .image-submit__title {
+    color: #0cf;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0cf;
+    padding-bottom: 1em;
+    line-height: 1.2;
+  }
+  
+  .image-submit__text {
+    margin: 1.1em 0;
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 0.8em;
+  }
+  
+  .main-footer {
+    text-align: center;
+    color: #f05768;
+    font-size: 0.9em;
+    margin-top: 8em;
+    margin-bottom: 2em;
+  }
+  
+/* Exemple de media query */
+/* on veut changer l'affichage à partir de 900px de large, la partie newsletter
+doit repasser à côté de la galerie */
+@media (min-width: 900px) {
+  .gallery-submit-wrapper {
+    flex-direction: row;
+  }
+
+  .gallery {
+    width: 72%;
+  }
+}
