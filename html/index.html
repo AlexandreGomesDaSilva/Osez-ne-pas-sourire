@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiens</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=open-sans:400,700,700i" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="page-title">J <span class="page-title__heart">&#x2764;</span> les chiens !!!</h1>
+            <nav class="header-links">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Contact</a>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="../images/twitter_icon.png" alt="Twitter des chiens">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="../images/facebook_icon.png" alt="Facebook des chiens">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="too-much">
+                <h2 class="too-much__title">Trop de chiens tu dis ? nope.</h2>
+                <p class="too-much__text">Ici nous pensons qu'il n'y aura jamais trop de chiens. Les chiens, c'est mignon. Les chiens, c'est pas con. Les chiens, ça sent bon. Il est fortement recommandé de regarder des photos de chiens tous les jours, car ça améliore la productivité et diminue le stress. Essayez !</p>
+            </section>
+    
+            <figure class="cam-of-the-week">
+                <img class="cam-of-the-week__image" src="../images/cameleon-big.jpg" alt="Le magnifique chien de la semaine">
+                <figcaption class="cam-of-the-week__title">Le chien de la semaine &#9825;</figcaption>
+            </figure>
+    
+            <div class="gallery-submit-wrapper">
+                <div class="gallery">
+                    <!-- img.gallery__thumbnail[src=../images/cameleon$$.jpg alt="chien n°$"]*20 -->
+                    <!-- Le fait de passer à la ligne entre chaque balise <img> et d'avoir des caractères
+                    espaces en début de ligne (à cause de l'indentation) fait qu'au niveau du rendu 
+                    HTML on prend en compte un unique espace => cet espace s'affiche même si on le 
+                    voit pas vraiment dans la page et donc on ne l'a pas pris en compte pour effectuer
+                    nos calculs de répartition des images sur la même ligne. => du coup, on n'arrive
+                    pas à faire tenir 4 images sur la même ligne.
+                    Astuce :
+                    - soit on place les balises images sans saut de ligne ni indentation entre elles
+                    => pas d'espace = pas de problème de calcul (par contre c'est moche pour le code non indenté)
+                    - soit on peut mettre un font-size: 0 sur le parent, ainsi les espaces utiliseront
+                    une taille de 0 et ne seront pas du tout affiché. -->
+                    <img src="../images/cameleon01.jpg" alt="chien n°1" class="gallery__thumbnail">
+                    <img src="../images/cameleon02.jpg" alt="chien n°2" class="gallery__thumbnail">
+                    <img src="../images/cameleon03.jpg" alt="chien n°3" class="gallery__thumbnail">
+                    <img src="../images/cameleon04.jpg" alt="chien n°4" class="gallery__thumbnail">
+                    <img src="../images/cameleon05.jpg" alt="chien n°5" class="gallery__thumbnail">
+                    <img src="../images/cameleon06.jpg" alt="chien n°6" class="gallery__thumbnail">
+                    <img src="../images/cameleon07.jpg" alt="chien n°7" class="gallery__thumbnail">
+                    <img src="../images/cameleon08.jpg" alt="chien n°8" class="gallery__thumbnail">
+                    <img src="../images/cameleon09.jpg" alt="chien n°9" class="gallery__thumbnail">
+                    <img src="../images/cameleon10.jpg" alt="chien n°10" class="gallery__thumbnail">
+                    <img src="../images/cameleon11.jpg" alt="chien n°11" class="gallery__thumbnail">
+                    <img src="../images/cameleon12.jpg" alt="chien n°12" class="gallery__thumbnail">
+                    <img src="../images/cameleon13.jpg" alt="chien n°13" class="gallery__thumbnail">
+                    <img src="../images/cameleon14.jpg" alt="chien n°14" class="gallery__thumbnail">
+                    <img src="../images/cameleon15.jpg" alt="chien n°15" class="gallery__thumbnail">
+                    <img src="../images/cameleon16.jpg" alt="chien n°16" class="gallery__thumbnail">
+                    <img src="../images/cameleon17.jpg" alt="chien n°17" class="gallery__thumbnail">
+                    <img src="../images/cameleon18.jpg" alt="chien n°18" class="gallery__thumbnail">
+                    <img src="../images/cameleon19.jpg" alt="chien n°19" class="gallery__thumbnail">
+                    <img src="../images/cameleon20.jpg" alt="chien n°20" class="gallery__thumbnail">
+                </div>
+        
+                <aside class="image-submit">
+                    <h3 class="image-submit__title">Soumettez vos photos de chiens!</h3>
+                    <p class="image-submit__text">Vous avez trouvé une photo de chien tellement mignonne que vous voulez la partager?<br><a class="link" href="">Partagez là ici!</a></p>
+                    <h3 class="image-submit__title">Inscrivez vous à notre newsletter!</h3>
+                    <p class="image-submit__text"><a class="link" href="">Souscrivez ici.</a></p>
+                </aside>
+            </div>
+        </main>
+    
+        <footer class="main-footer">
+            <!-- Plutôt que d'utiliser une entité HTML pour le caractère copyright ©, 
+            si on est en UTF-8 on peut directement mettre ce caractère dans le code -->
+            <p>Copyright © 2023 I &#x2764; chiens</p>
+        </footer>
+    </div>
+</body>
+</html>
